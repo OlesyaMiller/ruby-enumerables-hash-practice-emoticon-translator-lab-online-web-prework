@@ -18,7 +18,7 @@ def get_japanese_emoticon(yaml_file, emoticon)
   result = load_library(yaml_file)[:get_emoticon][emoticon]
   
   if result
-    puts "Apologies!"
+    "Sorry, that emoticon was not found"
   end
   #binding.pry 
 end
