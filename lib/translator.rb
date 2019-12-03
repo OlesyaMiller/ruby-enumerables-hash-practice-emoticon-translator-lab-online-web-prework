@@ -16,7 +16,7 @@ end
 
 def get_japanese_emoticon(yaml_file, emoticon)
   load_library(yaml_file)[:get_emoticon][emoticon]
-  if !emoticon
+  if load_library(yaml_file)[:get_emoticon][emoticon] == nil 
     puts "Apologies!"
   end
   
