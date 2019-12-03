@@ -15,7 +15,7 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(yaml_file, emoticon)
-  load_library(yaml_file)
+  load_library(yaml_file)[:get_emoticon][emoticon]
   # code goes here
   #binding.pry 
 end
